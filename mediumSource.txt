@@ -84,6 +84,7 @@ Resources
 		class:noBackground
 		show earned
 	*scene
+		hidden
 		on tick:
 			if ($scene=1)
 				log this is scene value 1.
@@ -125,9 +126,20 @@ Buildings
 
 Upgrades
 	//check the watch paint dry game for using upgrades to trigger scenes please
-	
+	*power module
+		name:power module
+		desc:spend some excess energy to reinforce your limbs.
+		cost:100 energy
+		on earn:yield 1 scene
+		on earn:log you channel your excess energy into your limbs.
 		
 //Upgrades2
+	*long-distance communicator
+		name:long-distance communicator
+		desc:set up your long distance communicator. you still need a receptor though!
+		cost:100 energy
+		on earn:yield 2 scene
+		tag: upgrades2
 
 Achievements
 	*TEMPLATE
