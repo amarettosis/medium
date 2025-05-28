@@ -126,7 +126,7 @@ Buildings
 
 Upgrades
 	//check the watch paint dry game for using upgrades to trigger scenes please
-	*power module
+	*pModule
 		name:power module
 		desc:spend some excess energy to reinforce your limbs.
 		cost:100 energy
@@ -134,7 +134,7 @@ Upgrades
 		on earn:log you channel your excess energy into your limbs.
 		
 //Upgrades2
-	*long-distance communicator
+	*ldComm
 		name:long-distance communicator
 		desc:set up your long distance communicator. you still need a receptor though!
 		cost:100 energy
