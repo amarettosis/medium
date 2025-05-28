@@ -124,11 +124,7 @@ Buildings
 		
 
 Upgrades
-	*upgrade1
-		name:upgrade1
-		desc: yields the first scene.
-		$scene=1
-		cost:10 energy
+	//check the watch paint dry game for using upgrades to trigger scenes please
 	
 		
 //Upgrades2
