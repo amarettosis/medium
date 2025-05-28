@@ -118,7 +118,7 @@ Buildings
 		desc:very hi-tech slow release fertilizers packed into little brown beads.<//><b>Effect:</b><.>produces 2 energy every 10 seconds.
 		icon:icons[10,12]
 		cost:30 energy
-		on tick:yield 0.1 credit
+		on tick:yield 0.1 energy
 		req:50 energy:earned
 		tag: buildings2
 		
