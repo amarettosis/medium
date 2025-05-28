@@ -135,7 +135,6 @@ Achievements
 		name:a1
 		desc:begin charging your battery.
 		req:(energy>=1)
-		yield 1 scene
 
 *Achiev2
 		name:a2
