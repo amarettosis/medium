@@ -105,9 +105,10 @@ Buildings
 		name:windowpane
 		desc:a clear windowpane letting the light of the nebula in.<//><b>effect:</b><.>produces 1 energy every 10 seconds.
 		icon:icons[10,12]
-		cost:30 energy
-		on tick:yield 0.1 energy
-		req:20 energy:earned
+		cost:10 energy
+		on tick:yield 5 energy
+		req:10 energy:earned
+//i'll make this an easy one so i can test easier...
 
 	
 
