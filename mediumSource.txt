@@ -124,7 +124,12 @@ Buildings
 		
 
 Upgrades
-	*TEMPLATE
+	*upgrade1
+		name:upgrade1
+		desc: yields the first scene.
+		passive:yield 1 scene
+		cost:10 energy
+	
 		
 //Upgrades2
 
