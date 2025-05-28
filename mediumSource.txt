@@ -62,7 +62,7 @@ Layout
 	header:Log
 
 Buttons
-	*creditButton
+	*batteryButton
 		name:battery
 		desc:charge up some excess energy.
 		on click:anim icon wobble
@@ -80,7 +80,7 @@ Buttons
 Resources
 	*energy
 		name:energy
-		desc:energy stored in your internal battery. you can use it to exert yourself.
+		desc:energy stored in your internal battery. you can use it to exert yourself or to synthesize a limited variety of materials.
 		class:noBackground
 		show earned
 	*scene
@@ -101,50 +101,32 @@ Buildings
 	
 	*TEMPLATE
 			
-	*drone|drones
-		name:Mining Drone|Mining Drones
-		desc:A tiny asteroid mining drone.<//><b>Effect:</b><.>Produces 1 Credits every 10 seconds.
+	*window|windows
+		name:windowpane
+		desc:a clear windowpane letting the light of the nebula in.<//><b>effect:</b><.>produces 1 energy every 10 seconds.
 		icon:icons[10,12]
-		cost:30 credits
-		on tick:yield 0.1 credit
-		req:20 credits:earned
+		cost:30 energy
+		on tick:yield 0.1 energy
+		req:20 energy:earned
 
 	
 
 //Buildings2 / Generators
 
-	*drone2|drones2
-		name:Mining Drone II|Mining Drones II
-		desc:A tiny asteroid mining drone.<//><b>Effect:</b><.>Produces 1 Credits every 10 seconds.
+	*fertilizer|fertilizers
+		name:slow release fertilizer|slow release fertilizers
+		desc:very hi-tech slow release fertilizers packed into little brown beads.<//><b>Effect:</b><.>produces 2 energy every 10 seconds.
 		icon:icons[10,12]
-		cost:30 credits
+		cost:30 energy
 		on tick:yield 0.1 credit
-		req:20 credits:earned
+		req:50 energy:earned
 		tag: buildings2
 		
 
 Upgrades
 	*TEMPLATE
-
-	*parsley
-		name:Mining Drone Tech
-		desc:Powers up the efficiency of the Mining Drones.<//><b>Effect:</b><.>+1 Credits/click<.>Mining Drone production x2
-		cost:200 credits
-		passive:increase credit yield of creditButton by 1
-		passive:multiply yield of drone by 2
-		req:200 credits:earned
-	
 		
 //Upgrades2
-
-	*parsley2
-		name:Mining Drone Tech II
-		desc:Powers up the efficiency of the Mining Drones II.<//><b>Effect:</b><.>+1 Credits/click<.>Mining Drone II production x2
-		cost:300 credits
-		passive:increase credit yield of creditButton by 1
-		passive:multiply yield of drone2 by 2
-		req:300 credits:earned
-		tag: upgrades2
 
 Achievements
 	*TEMPLATE
@@ -153,9 +135,10 @@ Achievements
 		name:a1
 		desc:begin charging your battery.
 		req:(energy>=1)
+		yield 1 scene
 
 *Achiev2
 		name:a2
-		desc:charge your battery to 50%.
-		req:(energy>=50)
+		desc:make up fertilizer for the soil.
+		req:(fertilizers>=50)
 		
