@@ -10,7 +10,7 @@ Settings
 	building cost increase:110%
 	building cost refund:50%
 	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/kasperja/GUI/main/BlankSpritesheet.png
-	stylesheet:https://raw.githubusercontent.com/amarettosis/medium/refs/heads/main/SciFi-Temp-CSS-white.txt?token=GHSAT0AAAAAADEU2VGGIW6BHDWYLWB5ZS7C2BWJU4Q
+	stylesheet:https://raw.githubusercontent.com/amarettosis/medium/refs/heads/main/SciFi-Temp-CSS-white.txt
 	no particles
 	no bulk particles
 
