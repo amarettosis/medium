@@ -83,9 +83,7 @@ Resources
 		desc:energy stored in your internal battery. you can use it to exert yourself.
 		class:noBackground
 		show earned
-	
 	*scene
-		name:scene|scenes
 		on tick:
 			if ($scene=1)
 				log this is scene value 1.
